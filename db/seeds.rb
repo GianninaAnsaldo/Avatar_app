@@ -9,5 +9,5 @@
 #   end
 
 10.times do
-    Image.create(url_image: Faker::Avatar.image)
+    Image.create(url_image: Faker::Avatar.image(set: "set4"))
 end
