@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   get "avatars/index"
-  get 'render/index'
-  get "up" => "rails/avatars#index", as: :rails_avatars_index
-  root "render#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -14,5 +11,5 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
- root "avatars#index"
+  root "avatars#index"
 end
